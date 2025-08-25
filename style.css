@@ -7,7 +7,7 @@
     }
     @font-face {
       font-family: 'Geist-R'; 
-      src: url('assets/fonts/Geist-Regular.otf') format('opentype'); 
+      src: url('assets/fonts/Geist-Light.otf') format('opentype'); 
       font-weight: normal; 
       font-style: normal; 
     }
@@ -360,6 +360,10 @@ padding: 3px 0 0 3px;
     
 }
 
+.left .usage .usageContent .usageContentRows .rowData *{
+    font-size: 15px;
+}
+
 .left .usage .usageContent .usageContentRows .rowData:hover{
     border: 1px solid rgba(128, 128, 128, 0.366);
     border-radius: 4px;
@@ -523,7 +527,7 @@ padding: 3px 0 0 3px;
     background-color: rgba(128, 128, 128, 0.342);
     margin: 2px 0 0 10px;
     padding: 2px 0 3px 6px;
-    width: 250px;
+    width: 210px;
     border-radius: 24px;
     transition: all  0.1s ease-in;
 }
