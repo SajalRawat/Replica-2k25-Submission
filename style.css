@@ -1,0 +1,546 @@
+   /* importing the geist font of vercel through otf file */
+   @font-face {
+      font-family: 'Geist'; 
+      src: url('assets/fonts/Geist-Black.otf') format('opentype'); 
+      font-weight: normal; 
+      font-style: normal; 
+    }
+    @font-face {
+      font-family: 'Geist-R'; 
+      src: url('assets/fonts/Geist-Regular.otf') format('opentype'); 
+      font-weight: normal; 
+      font-style: normal; 
+    }
+    
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Geist-R;
+    font-size: 14px;
+    font-weight: 900;
+    
+}
+body{
+        background-color: rgba(145, 147, 151, 0.073);
+
+}
+
+nav{
+    height:12vh;
+    padding: 10px 0 0 0 ;
+    background-color: white;
+}
+
+.upperbar{
+    display: flex;
+    justify-content:space-between
+    
+}
+.upperbar .logo{
+    width: 30vw;
+    display: flex;    
+}
+
+.upperbar .logo .triangle{
+    cursor: pointer;
+    margin:12px  ;
+
+}
+
+.upperbar .logo .triangle img:hover{
+        transition: all 0.5s ease-in-out;
+    scale: 1.3;
+    transform: rotate(360deg);
+
+}
+
+.upperbar .logo .projectName{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 20px;
+
+    
+}
+
+.upperbar .logo .projectName p{
+    font-size: 16px;
+}
+
+.upperbar .logo .projectName p:hover{
+    scale: 1.02;
+}
+
+.upperbar .logo .projectName .hobbyTab{
+    cursor: pointer;
+    background-color: rgba(213, 210, 210, 0.552);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 2px 7px;
+    margin: 0 5px 0 7px;
+    transition: all 0.1s ease-in;
+
+}
+
+.upperbar .logo .projectName .hobbyTab:hover{
+    border: 1px solid black;
+}
+
+.upperbar .profile{
+    width: 32vw;
+    display: flex;
+    align-items: center;
+
+}
+
+.upperbar .profile .find input{
+    border: none;
+    width: 10vw;
+}
+
+.upperbar .profile .find p{
+    border: 1px solid rgba(128, 128, 128, 0.492);
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin: 3px 4px 3px 0;
+    font-weight: 600;
+
+}
+
+.upperbar .profile .find{
+    margin: 0 10px 0 0 ;
+    border-radius: 7px;
+    height: 30px;
+    display: flex;
+    border: 1px solid rgba(128, 128, 128, 0.542)
+}
+.upperbar .profile p{
+    cursor: pointer;
+    border: 1px solid rgba(128, 128, 128, 0.292);
+    padding: 8px 10px;
+    font-weight: 600;
+    border-radius: 7px;
+    transition: all 0.1s ease-in;
+
+}
+
+.upperbar .profile p:hover{
+    background-color: rgba(128, 128, 128, 0.288);
+
+}
+
+.upperbar .profile .bookAndBell{
+    display: flex;
+    gap: 7px;
+    margin: 0 7px;
+
+}
+
+.upperbar .profile .bookAndBell img{
+    cursor: pointer;
+    border: 1px solid rgba(128, 128, 128, 0.478);
+    border-radius: 20px;
+    padding: 10px;
+    transition: all 0.1s ease-in;
+}
+.upperbar .profile .bookAndBell img:hover{
+    border: 1px solid black;
+}
+
+
+
+
+.lowerbar {
+    display: flex;
+}
+
+.lowerbar ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.lowerbar ul li{
+    cursor: pointer;
+    font-weight: 500;
+    color: rgb(128, 128, 128);
+    margin: 0 20px;
+    transition: all 0.1s ease-in;
+    font-size: 16px;
+    
+}
+
+.lowerbar ul li:hover{
+    color: black;
+    padding: 0 0 19px 0 ;
+    border-bottom: 4px solid black; 
+}
+
+
+.searchBar{
+    margin:  20px 35px 10px 35px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(200, 209, 226, 0.151);
+
+
+}
+
+.searchBar .searchProjects img{
+    cursor: pointer;
+}
+
+.searchBar .searchProjects{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.527);
+    border-radius: 7px;
+    padding: 0 0 0 7px;
+
+}
+
+
+.searchBar .searchProjects input{
+    padding: 0 10px;
+    border: none;
+    width: 74vw;
+    height: 40px;
+}
+
+.searchBar .threeRow{
+    cursor: pointer;
+    border: 1px solid rgba(128, 128, 128, 0.544);
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 0.1s ease-in;
+
+}
+
+.searchBar .threeRow:hover{
+    background-color: rgba(128, 128, 128, 0.314);
+}
+
+.searchBar .gridAndList{
+    cursor: pointer;
+    border: 1px solid rgba(128, 128, 128, 0.437);
+    border-radius:4px ;
+    display: flex;
+    padding: 4px;
+    gap: 7px;
+    align-items: center;
+    background-color:white;
+
+}
+
+.searchBar .gridAndList img{
+    padding: 7px 8px ;   
+    border-radius: 4px;
+    transition: all 0.1s ease-in;
+}
+
+.searchBar .gridAndList img:hover{
+        background-color: rgba(128, 128, 128, 0.241);
+
+}
+
+.searchBar .addNew{
+    cursor: pointer;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 0.1s ease-in;
+}
+
+.searchBar .addNew:hover{
+scale: 1.1;
+}
+
+
+main{
+    padding: 10px 0 10px 0;
+    display: flex;
+    gap: 1px;
+}
+
+
+.left{
+    width: 40vw;
+}
+
+.left .usage{
+    margin: 20px 20px 5px 30px;
+    width: 90%;
+    height: 30vh
+}
+
+
+
+.left .usage .usageContent .down-arrow{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 280px;
+    align-items: center;
+    border: 1px solid rgba(128, 128, 128, 0.444);
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.left .usage p{
+    margin: 0 0 20px 0 ;
+    font-size: 17px;
+}
+
+.left .usage .usageContent{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(128, 128, 128, 0.396);
+    border-radius: 6px;
+    padding: 12px;
+    transition: all 0.1s ease-in;
+
+}
+
+.left .usage .usageContent:hover{
+     border: 1px solid black;
+    height: 190px;
+    
+}
+
+.left .usage .usageContent .usageContentHead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 20px 0 ;
+}
+
+.left .usage .usageContent .usageContentHead .usageContentTitle .usageTitleText{
+    font-size: 16px;
+    padding: 2px;
+
+}
+.left .usage .usageContent .usageContentHead .usageContentTitle .usageSecondaryText{
+font-size: 14px;
+color:rgba(0, 0, 0, 0.507) ;
+padding: 3px 0 0 3px;
+}
+
+.left .usage .usageContent .usageContentHead .usageUpgrade{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+.left .usage .usageContent .usageContentHead .usageUpgrade:hover{
+    scale: 1.1;
+}
+
+.left .usage .usageContent .usageContentRows .rowData{
+    cursor: pointer;
+    margin: 10px 10px 0 0 ;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.852);
+    padding: 7px;
+    transition: all 0.1s ease-in;
+
+    
+}
+
+.left .usage .usageContent .usageContentRows .rowData:hover{
+    border: 1px solid rgba(128, 128, 128, 0.366);
+    border-radius: 4px;
+
+}
+
+
+
+.left .usage .usageContent .usageContentRows .rowDataKey{
+    display: flex;
+    align-items: center;
+
+}
+
+.left .recentPreviews{
+    margin: 30px 20px 5px 30px;
+    width: 90%;
+    height: 30vh
+}
+
+
+.left .recentPreviews p{
+        margin: 0 0 20px 0 ;
+        font-size: 17px;
+}
+
+.left .recentPreviews .recentPreviewsData{
+    border: 1px solid rgba(128, 128, 128, 0.396);
+    border-radius: 6px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transition: all 0.1s ease-in;
+
+
+}
+
+
+.left .recentPreviews .recentPreviewsData:hover{
+    border: 1px solid black;
+    scale: 1.01;
+    
+}
+
+.left .recentPreviews .recentPreviewsData img{
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgba(128, 128, 128, 0.478);
+    border-radius: 8px;
+    padding: 3px 5px;
+    margin: 0 0 20px 0;
+    transition: all 0.05s ease-in;
+}
+
+.left .recentPreviews .recentPreviewsData img:hover{
+    border: 2px solid black ;
+}
+
+
+.left .recentPreviews .recentPreviewsData p{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.54);
+    width: 353px;
+    text-align: center;
+
+    
+}
+
+.right{
+    width:60vw ;
+}
+.right p{
+    margin: 20px 0 20px 30px ;
+    font-size: 17px;
+}
+
+.right .projectContent{
+    cursor: pointer;
+    margin:  10px 30px 25px 30px ;
+    padding: 0px 10px 20px 10px;
+    border: 1px solid rgba(128, 128, 128, 0.503);
+    background-color: white;
+    border-radius: 6px;
+    transition: all 0.1s ease-in;
+
+}
+
+.right .projectContent:hover{
+    border: 1px solid black;
+    scale: 1.01;
+}
+
+.right .projectContent .projectHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+    padding: 10px;
+
+}
+
+.right .projectContent .projectHead .projectTitle{
+ display: flex;
+ align-items: center;
+ gap: 6px;
+}
+
+.right .projectContent .projectHead .projectTitle  .projectTitleImg{
+    margin: 0 6px 0 0 ;
+
+}
+.right .projectContent .projectHead .projectTitle .projectTitleText .projectMainText{
+    font-size: 16px;
+}
+
+.right .projectContent .projectHead .projectTitleText .projectSecondaryText{
+    color: grey;
+    font-size: 16px;
+}
+
+.right .projectContent .sideSVGs{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.right .projectContent .sideSVGs #heart-beat{
+    border: 4px solid rgba(128, 128, 128, 0.503);
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+
+
+}
+
+.right .projectContent .sideSVGs #heart-beat:hover{
+    transform: rotate(360deg );
+    border:4px solid  black;
+    
+}
+.right .projectContent .sideSVGs #threeDots{
+    transition: all 0.2s;
+}
+
+.right .projectContent .sideSVGs #threeDots:hover{
+    transform: rotate(90deg);
+    scale: 1.01;
+    
+}
+.right .projectContent .projectGithubTab{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: rgba(128, 128, 128, 0.342);
+    margin: 2px 0 0 10px;
+    padding: 2px 0 3px 6px;
+    width: 250px;
+    border-radius: 24px;
+    transition: all  0.1s ease-in;
+}
+
+.right .projectContent .projectGithubTab:hover{
+    background-color: white;
+    border: 1px solid black;
+}
+.right .projectContent .projectContentMainText{
+    font-size: 16px;
+    margin: 10px 0 5px 10px;
+}
+
+.right .projectContent .projectContentSecondaryText{
+    color: grey;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin: 0 10px 0 10px;
+}
