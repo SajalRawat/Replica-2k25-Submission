@@ -432,11 +432,11 @@ padding: 3px 0 0 3px;
 
 .left .recentPreviews .recentPreviewsData img{
     cursor: pointer;
-    height: 40px;
-    width: 40px;
+    height: 38px;
+    width: 38px;
     border: 1px solid rgba(128, 128, 128, 0.478);
-    border-radius: 8px;
-    padding: 3px 5px;
+    border-radius: 12px;
+    padding: 2px 4px;
     margin: 0 0 20px 0;
     transition: all 0.05s ease-in;
 }
@@ -569,7 +569,7 @@ padding: 3px 0 0 3px;
 
 /* Making nav bar height suitable for 15.6 inch laptop as mine is 16 inch :) */ 
 @media (max-height:1080px) {
-    .nav{
+    nav{
         height: 14vh;
     }
     
