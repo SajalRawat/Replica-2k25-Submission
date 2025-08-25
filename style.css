@@ -28,7 +28,7 @@ body{
 }
 
 nav{
-    height:12vh;
+    height:14vh;
     padding: 10px 0 0 0 ;
     background-color: white;
 }
@@ -547,4 +547,12 @@ padding: 3px 0 0 3px;
     align-items: center;
     gap: 2px;
     margin: 0 10px 0 10px;
+}
+
+/* Making nav bar height suitable for 15.6 inch laptop as mine is 16 inch :) */ 
+@media only screen and (max-height:1080px) {
+    .nav{
+        height: 14vh;
+    }
+    
 }
