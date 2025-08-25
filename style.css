@@ -568,7 +568,7 @@ padding: 3px 0 0 3px;
 }
 
 /* Making nav bar height suitable for 15.6 inch laptop as mine is 16 inch :) */ 
-@media only screen and (max-height:1080px) {
+@media only screen and (min-height:1080px) {
     .nav{
         height: 14vh;
     }
