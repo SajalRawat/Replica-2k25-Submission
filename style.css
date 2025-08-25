@@ -317,7 +317,7 @@ main{
 }
 
 .left .usage p{
-    margin: 20px 0 20px 0 ;
+    margin: 0 0 20px 0 ;
     font-size: 17px;
 }
 
@@ -405,7 +405,7 @@ padding: 3px 0 0 3px;
 
 
 .left .recentPreviews p{
-        margin: 0 0 20px 0 ;
+        margin: 20px 0 20px 0 ;
         font-size: 17px;
 }
 
