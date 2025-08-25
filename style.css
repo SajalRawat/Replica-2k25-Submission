@@ -26,9 +26,16 @@ body{
         background-color: rgba(145, 147, 151, 0.073);
 
 }
+/* Making nav bar height suitable for 15.6 inch laptop as mine is 16 inch :) */ 
+@media screen and (min-height:1080px) {
+    nav{
+        height: 12vh;
+    }
+    
+}
 
 nav{
-    height:12vh;
+    height:14vh;
     padding: 10px 0 0 0 ;
     background-color: white;
 }
@@ -567,10 +574,3 @@ padding: 3px 0 0 3px;
     margin: 0 10px 0 10px;
 }
 
-/* Making nav bar height suitable for 15.6 inch laptop as mine is 16 inch :) */ 
-@media (max-height:1080px) {
-    nav{
-        height: 14vh;
-    }
-    
-}
