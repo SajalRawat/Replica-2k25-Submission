@@ -28,7 +28,7 @@ body{
 }
 
 nav{
-    height:14vh;
+    height:12vh;
     padding: 10px 0 0 0 ;
     background-color: white;
 }
@@ -63,6 +63,15 @@ nav{
     margin: 0 0 0 20px;
 
     
+}
+
+.upperbar .logo .projectName .profileDot{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 10px 0 20px ;
+    background: #020024;
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 69, 121, 1) 0%, rgba(200, 0, 255, 1) 100%);
 }
 
 .upperbar .logo .projectName p{
@@ -150,6 +159,15 @@ nav{
     border: 1px solid black;
 }
 
+.upperbar .profile .profileDot{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin: 0 0 0 3px ;
+    background: #020024;
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 69, 121, 1) 0%, rgba(200, 0, 255, 1) 100%);
+
+}
 
 
 
